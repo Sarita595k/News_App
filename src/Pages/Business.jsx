@@ -1,9 +1,9 @@
-import { Navbar } from "../Components/Navbar"
+import { FetchIndiaNews } from "../Components/FetchIndiaNews"
 
 export const Business = () => {
     return (
         <>
-            <h1>Business</h1>
+            <FetchIndiaNews name="business" />
         </>
     )
 }

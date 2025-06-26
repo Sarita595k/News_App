@@ -1,5 +1,9 @@
+import { FetchIndiaNews } from "../Components/FetchIndiaNews"
+
 export const LifeStyle = () => {
-    return (<>
-        <h1>lifestyle</h1>
-    </>)
+    return (
+        <>
+            <FetchIndiaNews name="lifeStyle" />
+        </>
+    )
 }
