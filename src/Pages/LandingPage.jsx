@@ -1,12 +1,12 @@
-import { FetchNews } from "../Components/FetchNews"
-import { NewsCard } from "../Components/NewsCard"
+import { FetchIndiaNews } from "../Components/FetchIndiaNews"
+// import { FetchNews } from "../Components/FetchNews"
 
 
 export const LandingPage = () => {
 
     return (
         <>
-            <FetchNews />
+            <FetchIndiaNews name="general" />
         </>
     )
 }

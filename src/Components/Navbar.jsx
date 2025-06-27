@@ -46,8 +46,11 @@ export const Navbar = () => {
             <NavDiv>
                 <StyledNavLink className={({ isActive }) => isActive ? "active" : ""} to="/">Home</StyledNavLink>
                 <StyledNavLink className={({ isActive }) => isActive ? "active" : ""} to="/business">Business</StyledNavLink>
-                <StyledNavLink className={({ isActive }) => isActive ? "active" : ""} to="/lifestyle">Lifestyle</StyledNavLink>
+                <StyledNavLink className={({ isActive }) => isActive ? "active" : ""} to="/health">Health</StyledNavLink>
+                <StyledNavLink className={({ isActive }) => isActive ? "active" : ""} to="/sports">Sports</StyledNavLink>
+                <StyledNavLink className={({ isActive }) => isActive ? "active" : ""} to="/science">Science</StyledNavLink>
                 <StyledNavLink className={({ isActive }) => isActive ? "active" : ""} to="/technology">Technology</StyledNavLink>
+                <StyledNavLink className={({ isActive }) => isActive ? "active" : ""} to="/entertainment">Entertainment</StyledNavLink>
             </NavDiv>
         </NavbarContainer>
     )

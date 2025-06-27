@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react"
 import { NewsCard } from "./NewsCard"
+import './Styles/commonStyle.css'
 
-const newsCard = {
-    display: "flex",
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "space-evenly",
-    alignItems: "center"
-}
 export const FetchNews = () => {
     const [news, setNews] = useState([])
 
@@ -28,7 +22,7 @@ export const FetchNews = () => {
 
     return (<div style={{ textAlign: "center" }}>
         <h1>Top headings</h1>
-        <div style={newsCard}>
+        <div className="newsCard">
             {news.slice(0, 15).map((article, index) =>
                 <NewsCard key={index} article={article} />)}
         </div>

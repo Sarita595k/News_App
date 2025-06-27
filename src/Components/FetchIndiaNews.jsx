@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { NewsCard } from "./NewsCard"
-
+import './Styles/commonStyle.css'
 export const FetchIndiaNews = (props) => {
     const [news, setnews] = useState([])
     const fetchNews = async () => {
@@ -10,14 +10,14 @@ export const FetchIndiaNews = (props) => {
             setnews(data.articles)
             console.log(data)
         } catch (err) {
-
+            console.log(err)
         }
     }
     useEffect(() => {
         fetchNews()
     }, [])
     return (
-        <div>
+        <div className="newsCard">
             {news.slice(0, 17).map((article, index) =>
                 <NewsCard key={index} article={article} />
             )}

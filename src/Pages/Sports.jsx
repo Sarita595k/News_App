@@ -1,9 +1,9 @@
 import { FetchIndiaNews } from "../Components/FetchIndiaNews"
 
-export const Technology = () => {
+export const Sports = () => {
     return (
         <>
-            <FetchIndiaNews name="technology" />
+            <FetchIndiaNews name="sports" />
         </>
     )
 }
