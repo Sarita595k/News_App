@@ -7,6 +7,7 @@ import { Navbar } from "./Components/Navbar"
 import { Health } from "./Pages/Health"
 import { Sports } from "./Pages/Sports"
 import { Science } from "./Pages/Science"
+import { Header } from "./Components/Header"
 
 import "./App.css"
 

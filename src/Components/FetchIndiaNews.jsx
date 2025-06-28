@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { NewsCard } from "./NewsCard"
+import { Header } from "./Header"
 import './Styles/commonStyle.css'
 export const FetchIndiaNews = (props) => {
     const [news, setnews] = useState([])
@@ -16,11 +17,18 @@ export const FetchIndiaNews = (props) => {
     useEffect(() => {
         fetchNews()
     }, [])
+
     return (
-        <div className="newsCard">
-            {news.slice(0, 22).map((article, index) =>
-                <NewsCard key={index} article={article} />
-            )}
-        </div>
+        <>
+            {news.slice(0, 1).map((article, index) => {
+                <Header key={article.author} article={article} />
+            })}
+
+            <div className="newsCard">
+                {news.slice(1, 22).map((article, index) =>
+                    <NewsCard key={index} article={article} />
+                )}
+            </div>
+        </>
     )
 }   
