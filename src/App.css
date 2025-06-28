@@ -1,5 +1,10 @@
-/* #root {
+#root {
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
-} */
+}
+
+.mainContainer {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+
+}

@@ -2,9 +2,9 @@ import { FetchIndiaNews } from "../Components/FetchIndiaNews"
 
 export const Health = () => {
     return (
-        <>
-            <h1>Health</h1>
+        <div>
+            <h1 className="newsTagline">Health News</h1>
             <FetchIndiaNews name="health" />
-        </>
+        </div>
     )
 }

@@ -18,7 +18,7 @@ export const FetchIndiaNews = (props) => {
     }, [])
     return (
         <div className="newsCard">
-            {news.slice(0, 17).map((article, index) =>
+            {news.slice(0, 22).map((article, index) =>
                 <NewsCard key={index} article={article} />
             )}
         </div>

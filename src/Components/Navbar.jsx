@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 const NavbarContainer = styled.div`
 margin-top:-3rem;
+background-image: linear-gradient(to right,rgb(129, 183, 223) 0%,rgb(35, 132, 211) 100%);
 box-sizing:boder-box;
 padding-bottom:2rem;
 display:flex;
@@ -29,9 +30,12 @@ const StyledNavLink = styled(NavLink)`
     color: blue;
 }
     &:hover{
-    border:1px solid black;
+    border:1px solid darkBlue;
+    border-radius:2rem;
+
     padding:.7rem 1.2rem;
-    color:blue;
+    color:white;
+    font-weigth:bold;
     transition:all 1.2s ease-in-out;
     }
 `
