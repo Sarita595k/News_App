@@ -1,4 +1,5 @@
 import { FetchIndiaNews } from "../Components/FetchIndiaNews"
+import { Header } from "../Components/Header"
 // import { FetchNews } from "../Components/FetchNews"
 import "../Components/Styles/commonStyle.css"
 
