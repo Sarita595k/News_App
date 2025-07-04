@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export const fetchCricketMatch = () => {
     const [match, setMatch] = useState([])
@@ -6,6 +6,9 @@ export const fetchCricketMatch = () => {
     const fetchMatchUrl = () => {
 
     }
+    useEffect(() => {
+        fetchMatchUrl()
+    })
     return (
         <h1>Cricket Match</h1>
     )
