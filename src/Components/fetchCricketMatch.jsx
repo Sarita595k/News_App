@@ -4,6 +4,9 @@ export const fetchCricketMatch = () => {
     const [match, setMatch] = useState([])
 
     const fetchMatchUrl = () => {
+        try {
+
+        } catch (err) { }
 
     }
     useEffect(() => {
