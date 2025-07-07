@@ -10,6 +10,7 @@ import { Science } from "./Pages/Science"
 import { Header } from "./Components/Header"
 
 import "./App.css"
+import { Footer } from "./Components/Footer"
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/entertainment" element={<Entertainment />} />
         </Routes>
       </div>
+      <Footer />
     </>
   )
 }
