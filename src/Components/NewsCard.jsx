@@ -55,7 +55,7 @@ export const NewsCard = (props) => {
                 <p style={{ margin: 0, padding: 0 }}>On: {props.article.publishedAt ? props.article.publishedAt : "Not specified"}</p>
             </ArticleDetails>
 
-            <NewsHeading>{props.article.title?.slice(1, 50)}...</NewsHeading>
+            <NewsHeading>{props.article.title?.slice(0, 50)}...</NewsHeading>
             <p style={{ color: "#78adfe" }}>{props.article.description?.slice(0, 150)}...</p>
             <ButtonReadMore><LinkBtn to={props.article.url} target='_blank'>Read more</LinkBtn></ButtonReadMore>
             <ButtonReadMore><LinkBtn to={props.article.url} target='_blank'>More details</LinkBtn></ButtonReadMore>
