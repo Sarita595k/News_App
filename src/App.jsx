@@ -15,6 +15,7 @@ import { Footer } from "./Components/Footer"
 const App = () => {
   return (
     <>
+      {/* main navbar section  */}
       <Navbar />
       <div className="mainContainer">
         <Routes>
