@@ -3,7 +3,7 @@ import { LandingPage } from "./Pages/LandingPage"
 import { Business } from "./Pages/Business"
 import { Technology } from "./Pages/Technology"
 import { Entertainment } from "./Pages/Entertainment"
-import { Navbar } from "./Components/Navbar"
+import { Nav } from "./Components/Navbar"
 import { Health } from "./Pages/Health"
 import { Sports } from "./Pages/Sports"
 import { Science } from "./Pages/Science"
@@ -16,7 +16,7 @@ const App = () => {
   return (
     <>
       {/* main navbar section  */}
-      <Navbar />
+      <Nav />
       <div className="mainContainer">
         <Routes>
           <Route path="/" element={<LandingPage />} />

@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom'
 import styled from "styled-components"
+import { Navbar } from 'react-bootstrap'
 
-const NavbarContainer = styled.div`
+const NavbarContainer = styled(Navbar)`
 margin-top:-3rem;
 background-image: linear-gradient(to right,rgb(129, 183, 223) 0%,rgb(35, 132, 211) 100%);
 box-sizing:boder-box;
@@ -43,7 +44,7 @@ const NavDiv = styled.div`
 margin-top:-2rem;
 `
 
-export const Navbar = () => {
+export const Nav = () => {
     return (
         <NavbarContainer>
             <NavLink to="/"><LogoImage src=".\assets\logo.png" alt="logo Image" /></NavLink>
